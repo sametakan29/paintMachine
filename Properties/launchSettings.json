@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "paintMachine": {
+      "commandName": "Project",
+      "debugEngines": "managed,native",
+      "sqlDebugging": false
+    }
+  }
+}
