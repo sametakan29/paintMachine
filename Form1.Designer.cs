@@ -51,12 +51,16 @@
             // 
             // btnPaint
             // 
-            btnPaint.Location = new Point(828, 457);
+            btnPaint.BackColor = Color.FromArgb(37, 99, 235);
+            btnPaint.FlatStyle = FlatStyle.Flat;
+            btnPaint.Font = new Font("Tahoma", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            btnPaint.ForeColor = Color.White;
+            btnPaint.Location = new Point(929, 366);
             btnPaint.Name = "btnPaint";
-            btnPaint.Size = new Size(287, 48);
+            btnPaint.Size = new Size(287, 82);
             btnPaint.TabIndex = 0;
             btnPaint.Text = "Boya Yap";
-            btnPaint.UseVisualStyleBackColor = true;
+            btnPaint.UseVisualStyleBackColor = false;
             btnPaint.Click += btnPaint_Click_1;
             // 
             // lblStatus
@@ -70,31 +74,37 @@
             // 
             // cmbColors
             // 
+            cmbColors.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbColors.FormattingEnabled = true;
-            cmbColors.Location = new Point(828, 46);
+            cmbColors.Location = new Point(929, 76);
             cmbColors.Name = "cmbColors";
             cmbColors.Size = new Size(287, 41);
             cmbColors.TabIndex = 2;
+            cmbColors.SelectedIndexChanged += cmbColors_SelectedIndexChanged;
             // 
             // pnlColorPreview
             // 
-            pnlColorPreview.Location = new Point(828, 283);
+            pnlColorPreview.Location = new Point(929, 208);
             pnlColorPreview.Name = "pnlColorPreview";
-            pnlColorPreview.Size = new Size(287, 133);
+            pnlColorPreview.Size = new Size(287, 103);
             pnlColorPreview.TabIndex = 3;
             // 
             // pbServo1
             // 
             pbServo1.Location = new Point(12, 159);
+            pbServo1.Maximum = 1000;
             pbServo1.Name = "pbServo1";
             pbServo1.Size = new Size(337, 59);
+            pbServo1.Style = ProgressBarStyle.Continuous;
             pbServo1.TabIndex = 4;
             // 
             // pbServo2
             // 
             pbServo2.Location = new Point(12, 323);
+            pbServo2.Maximum = 1000;
             pbServo2.Name = "pbServo2";
             pbServo2.Size = new Size(337, 59);
+            pbServo2.Style = ProgressBarStyle.Continuous;
             pbServo2.TabIndex = 5;
             // 
             // label1
@@ -126,17 +136,22 @@
             // 
             // dgvHistory
             // 
+            dgvHistory.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvHistory.BackgroundColor = Color.White;
+            dgvHistory.BorderStyle = BorderStyle.None;
             dgvHistory.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvHistory.Location = new Point(12, 542);
+            dgvHistory.Location = new Point(12, 487);
             dgvHistory.Name = "dgvHistory";
+            dgvHistory.RowHeadersVisible = false;
             dgvHistory.RowHeadersWidth = 51;
-            dgvHistory.Size = new Size(605, 120);
+            dgvHistory.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvHistory.Size = new Size(1268, 249);
             dgvHistory.TabIndex = 9;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(12, 505);
+            label2.Location = new Point(12, 450);
             label2.Name = "label2";
             label2.Size = new Size(191, 34);
             label2.TabIndex = 10;
@@ -144,23 +159,23 @@
             // 
             // pnlServo1Led
             // 
-            pnlServo1Led.Location = new Point(546, 178);
+            pnlServo1Led.Location = new Point(588, 178);
             pnlServo1Led.Name = "pnlServo1Led";
             pnlServo1Led.Size = new Size(121, 28);
             pnlServo1Led.TabIndex = 11;
             // 
             // pnlServo2Led
             // 
-            pnlServo2Led.Location = new Point(546, 345);
+            pnlServo2Led.Location = new Point(588, 345);
             pnlServo2Led.Name = "pnlServo2Led";
             pnlServo2Led.Size = new Size(121, 28);
             pnlServo2Led.TabIndex = 12;
             // 
             // pnlComLed
             // 
-            pnlComLed.Location = new Point(259, 15);
+            pnlComLed.Location = new Point(248, 12);
             pnlComLed.Name = "pnlComLed";
-            pnlComLed.Size = new Size(121, 28);
+            pnlComLed.Size = new Size(31, 31);
             pnlComLed.TabIndex = 12;
             // 
             // txtBoxTank1
@@ -179,29 +194,35 @@
             // 
             // btnTankAdd1
             // 
+            btnTankAdd1.BackColor = Color.FromArgb(226, 232, 240);
+            btnTankAdd1.FlatStyle = FlatStyle.Flat;
+            btnTankAdd1.ForeColor = Color.FromArgb(15, 23, 42);
             btnTankAdd1.Location = new Point(184, 224);
             btnTankAdd1.Name = "btnTankAdd1";
             btnTankAdd1.Size = new Size(127, 40);
             btnTankAdd1.TabIndex = 15;
             btnTankAdd1.Text = "Ekle";
-            btnTankAdd1.UseVisualStyleBackColor = true;
+            btnTankAdd1.UseVisualStyleBackColor = false;
             btnTankAdd1.Click += btnTankAdd1_Click;
             // 
             // btnTankAdd2
             // 
+            btnTankAdd2.BackColor = Color.FromArgb(226, 232, 240);
+            btnTankAdd2.FlatStyle = FlatStyle.Flat;
+            btnTankAdd2.ForeColor = Color.FromArgb(15, 23, 42);
             btnTankAdd2.Location = new Point(184, 388);
             btnTankAdd2.Name = "btnTankAdd2";
             btnTankAdd2.Size = new Size(127, 40);
             btnTankAdd2.TabIndex = 16;
             btnTankAdd2.Text = "Ekle";
-            btnTankAdd2.UseVisualStyleBackColor = true;
+            btnTankAdd2.UseVisualStyleBackColor = false;
             btnTankAdd2.Click += btnTankAdd2_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(15F, 33F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1237, 674);
+            ClientSize = new Size(1292, 748);
             Controls.Add(btnTankAdd2);
             Controls.Add(btnTankAdd1);
             Controls.Add(txtBoxTank2);
