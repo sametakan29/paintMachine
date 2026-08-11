@@ -1,4 +1,3 @@
-# 🎨 Automated Paint Mixing & Tank Management System (`paintMachine`)
 
 ![.NET 10.0](https://img.shields.io/badge/.NET-10.0-512BD4?style=flat-square&logo=dotnet)
 ![C# WinForms](https://img.shields.io/badge/C%23-WinForms-239120?style=flat-square&logo=c-sharp)
@@ -61,6 +60,8 @@ The project follows a **Layered Architecture** pattern separating Presentation, 
   * **Servo 1 (Red Tank):** Digital Pin 9
   * **Servo 2 (Yellow Tank):** Digital Pin 10
 * **Power Supply:** External 5V/2A Powerbank / Power Supply (Common GND with Arduino)
+<img width="900" height="1600" alt="WhatsApp Image 2026-08-11 at 09 47 46" src="https://github.com/user-attachments/assets/771f30e7-0a45-424a-8279-1b5b5295c119" />
+<img width="900" height="1600" alt="image" src="https://github.com/user-attachments/assets/3fd7a7d4-195f-44c2-95ad-df1b22eeab5a" />
 
 ### Servo Movement Logic
 * **Step Angle (`PRESS_ANGLE`):** 15° per dispense action.
