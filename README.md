@@ -3,11 +3,18 @@
 ![C# WinForms](https://img.shields.io/badge/C%23-WinForms-239120?style=flat-square&logo=c-sharp)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-4169E1?style=flat-square&logo=postgresql)
 ![Arduino](https://img.shields.io/badge/Arduino-UNO-00979D?style=flat-square&logo=arduino)
+![Related Management System](https://img.shields.io/badge/Management-paint--machine--maintenance-green?style=flat-square&logo=github)](https://github.com/sametakan29/paint-machine-maintenance)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
 An automated paint mixing, dispensing, and real-time inventory tracking system built with **.NET 10.0 Windows Forms**, **PostgreSQL**, and **Arduino UNO**.
 
 The system dispenses precise paint volumes according to color recipes (Red, Yellow, Orange), communicates with physical servo motors via Serial Port (COM7), tracks tank levels in real time with overflow protection, and logs all dispensing activities.
+
+---
+
+## 🔗 Related Projects (Ecosystem)
+
+* 🏢 **[paint-machine-maintenance (Management & Maintenance System)](https://github.com/sametakan29/paint-machine-maintenance):** The enterprise management counterpart of this hardware system. Features multi-store management, staff role assignments, machine component maintenance scheduling (mixer motor, pump, filter), and historical analytics.
 
 ---
 
