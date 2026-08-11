@@ -144,6 +144,7 @@ CREATE TABLE PaintLogs (
 ```
 
 ### 🚀 Getting Started
+<img width="1147" height="647" alt="uygulama1" src="https://github.com/user-attachments/assets/26aa21d9-8441-410a-a0ea-ca461a985bf6" />
 
 #### Prerequisites
 * **.NET 10.0 SDK** (or .NET 8.0+)
