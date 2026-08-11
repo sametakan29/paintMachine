@@ -70,7 +70,7 @@ The project follows a **Layered Architecture** pattern separating Presentation, 
 ### Serial Protocol Format
 Data packets are sent as ASCII string lines terminated with `\n`:
 
-$$\text{Format: } \text{"[Servo1\_Ms],[Servo2\_Ms]\textbackslash n"}$$
+`"[Servo1_Ms],[Servo2_Ms]\n"`
 
 * **Red (10ml Servo 1):** `"1000,0\n"`
 * **Yellow (10ml Servo 2):** `"0,1000\n"`
